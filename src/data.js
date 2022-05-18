@@ -3,21 +3,21 @@ export const sliderItems = [
     {
         id: 1,
         img: "https://aeworld.com/wp-content/uploads/2021/12/CELINE_WOMEN_SUMMER22_PRINT_10.jpg",
-        title: 'Spring Sale!',
+        title: 'Spring Collection!',
         description: "Don't miss Your Chanse! Save up to 50% on every purchase!",
         bg: '819351',
     },
     {
         id: 2,
         img: "https://1l1qtl3ivlys18bq884b04ci-wpengine.netdna-ssl.com/wp-content/gallery/summer-collection-2021/1943_QP_E-COMMERCE_WEBSITE_SUMMER-2021_FLUID-BOOK.jpg",
-        title: 'Summer Sale!',
+        title: 'Summer Collection!',
         description: "Don't miss Your Chanse! Save up to 30% on every purchase!",
         bg: 'e5d6cd',
     },
     {
         id: 3,
         img: "https://habituallychic.luxury/wp-content/uploads/2019/09/sezane-sutumn-september-2019-habituallychic-003-730x1024.jpg",
-        title: 'Autumn Sale!',
+        title: 'Autumn Collection!',
         description: "Don't miss Your Chanse! Save up to 40% on every purchase!",
         bg: '977a67',
     }
@@ -62,8 +62,8 @@ export const popularProducts = [
         "id": 5,
         "img": "https://www.neweracap.co.uk/globalassets/products/b5193_282/13102981/new-york-yankees-mlb-patch-navy-varsity-jacket-13102981-center.jpg?w=400",
     },
-    {
-        "id": 6,
-        "img": "https://5.imimg.com/data5/BV/UY/ZP/SELLER-59756470/mens-cotton-jacket-500x500.jpg",
-    }
+    // {
+    //     "id": 6,
+    //     "img": "https://5.imimg.com/data5/BV/UY/ZP/SELLER-59756470/mens-cotton-jacket-500x500.jpg",
+    // }
 ]
