@@ -5,7 +5,7 @@ export const sliderItems = [
         img: "https://aeworld.com/wp-content/uploads/2021/12/CELINE_WOMEN_SUMMER22_PRINT_10.jpg",
         title: 'Spring Collection!',
         description: "Don't miss Your Chanse! Save up to 50% on every purchase!",
-        bg: '819351',
+        bg: 'e4e2dd',
     },
     {
         id: 2,
