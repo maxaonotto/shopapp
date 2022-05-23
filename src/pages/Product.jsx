@@ -11,7 +11,6 @@ const Wrapper = styled.div`
     padding: 50px;
     display: flex;
     ${mobile({ padding: "10px", flexDirection: "column"})}
-
 `;
 const ImgContainer = styled.div`
     flex: 1;
@@ -74,6 +73,7 @@ const AmountContainer = styled.div`
     display: flex;
     align-items: center;
     font-weight: 800;
+    margin: 0 10px;
 `;
 const Amount = styled.span`
     width: 30px;
@@ -95,6 +95,7 @@ const Button = styled.button`
 `;
 
 const Product = () => {
+
   return (
     <Container>
         <Navbar />
@@ -129,8 +130,8 @@ const Product = () => {
                 </FilterContainer>
                 <AddContainer>
                     <AmountContainer>
-                          <Remove />
-                          <Amount>1</Amount>
+                        <Remove />
+                        <Amount>1</Amount>
                         <Add/>
                     </AmountContainer>
                     <Button>Add to Cart</Button>
