@@ -8,3 +8,7 @@ export const getListOfProducts = () => {
 export const getProduct = (id) => {
   return axios.get(`${productsUrl}/${id}`);
 };
+
+export const getProductCategory = (category) => {
+  return axios.get(`${productsUrl}/category/${category}`);
+};
