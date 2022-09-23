@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   productList: [],
-  productAmount: 0,
+  cartAmount: 0,
 };
 const productReducer = createSlice({
   name: "product",
