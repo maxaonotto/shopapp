@@ -29,7 +29,7 @@ const ProductView = () => {
           <FontAwesomeIcon className="fs-5 px-1" icon={faStar} />
         </Card.Text>
         <Card.Text className="fw-bold fs-5 my-4">$ {product.price}</Card.Text>
-        <AddProduct />
+        <AddProduct data={product} />
       </Card.Body>
     </Card>
   );
