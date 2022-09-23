@@ -7,7 +7,7 @@ const NavCart = () => {
     <Nav.Link as={Link} to="/cart">
       <Button variant="outline-light">
         Cart
-        <Badge bg="white" text="black">
+        <Badge bg="white" text="black" className="mx-1">
           1
         </Badge>
       </Button>

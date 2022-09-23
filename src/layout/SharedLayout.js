@@ -9,7 +9,7 @@ const SharedLayout = () => {
     <Container
       fluid
       style={{ height: "100vh" }}
-      className="p-0 m-0 d-flex flex-column justify-content-between"
+      className="p-0 d-flex flex-column justify-content-between"
     >
       <NavBar />
       <Outlet />

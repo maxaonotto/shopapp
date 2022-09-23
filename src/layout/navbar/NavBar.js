@@ -7,8 +7,8 @@ import NavLogo from "./NavLogo";
 
 const NavBar = () => {
   return (
-    <Navbar bg="dark" variant="dark">
-      <Container className="m-0 p-0">
+    <Navbar bg="dark" variant="dark" className="d-flex justify-content-around">
+      <Container>
         <NavLogo />
         <NavLinks />
         <NavCart />

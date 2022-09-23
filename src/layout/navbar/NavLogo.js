@@ -4,7 +4,7 @@ import { Nav, Navbar } from "react-bootstrap";
 
 const NavLogo = () => {
   return (
-    <Navbar.Brand className="fw-bold fs-3 py-1 pl-5">
+    <Navbar.Brand className="fw-bold fs-3">
       <Nav.Link as={Link} to="/">
         S h o p l y
       </Nav.Link>
