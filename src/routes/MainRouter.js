@@ -11,7 +11,7 @@ const MainRouter = () => {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<HomePage />} />
-          <Route path="/product/id=productId" element={<ProductView />} />
+          <Route path="/product/id=:productId" element={<ProductView />} />
           <Route path="products" element={<ProductsListView />} />
         </Route>
       </Routes>
