@@ -1,4 +1,8 @@
 import {
+  getListOfProducts,
+  getProductCategory,
+} from "../../services/getProducts";
+import {
   add,
   clearCart,
   decrease,
@@ -20,4 +24,13 @@ export const handleDeleteFromCart = (dispatch, productId, index) => {
 };
 export const handleClearCart = (dispatch) => {
   dispatch(clearCart());
+};
+export const handleCategory = (category, setList) => {
+  category !== "all"
+    ? getProductCategory(category)
+        .then((res) => setList(res.data))
+        .catch(() => setList([]))
+    : getListOfProducts()
+        .then((res) => setList(res.data))
+        .catch(() => setList([]));
 };
