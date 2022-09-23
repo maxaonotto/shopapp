@@ -1,8 +1,8 @@
 import React from "react";
-import { Button, Col } from "react-bootstrap";
-import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
-
+import { Col } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
+import AddProduct from "../button/AddProduct";
 const Product = ({ data }) => {
   const { title, price, image, id } = data;
 
@@ -22,7 +22,7 @@ const Product = ({ data }) => {
         <Card.Body className="d-flex flex-column justify-content-between">
           <Card.Title className="fs-6">{title}</Card.Title>
           <Card.Text className="lead fw-bold">$ {price}</Card.Text>
-          <Button variant="dark">Add To Cart</Button>
+          <AddProduct data={data} />
         </Card.Body>
       </Card>
     </Col>
