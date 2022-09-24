@@ -5,7 +5,7 @@ import { handleCategory } from "../../redux/action";
 
 const Categories = ({ setList }) => {
   return (
-    <Row className="m-0 p-3 d-flex justify-content-center">
+    <Row className="w-100 m-0 p-3 d-flex justify-content-center">
       <Col
         as={Button}
         variant="dark"

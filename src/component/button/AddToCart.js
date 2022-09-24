@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { Button } from "react-bootstrap";
 import { handleAddProduct } from "../../redux/action";
 
-const AddProduct = ({ data }) => {
+const AddToCart = ({ data }) => {
   const dispatch = useDispatch();
   const addToCart = () => handleAddProduct(dispatch, data);
 
@@ -14,4 +14,4 @@ const AddProduct = ({ data }) => {
   );
 };
 
-export default AddProduct;
+export default AddToCart;
