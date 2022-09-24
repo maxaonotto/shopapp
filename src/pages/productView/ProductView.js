@@ -1,14 +1,15 @@
 import React from "react";
 import useSingleProduct from "../../hooks/useSingleProduct";
 
-import { Card } from "react-bootstrap";
+import { Card, Form } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
-import AddProduct from "../../component/button/AddProduct";
+import AddToCart from "../../component/button/AddToCart";
+import EditProduct from "../../component/button/EditProduct";
 
 const ProductView = () => {
   const [product] = useSingleProduct();
-  // const dispatch = useDispatch();
+
   return (
     <Card
       className="flex-xl-row flex-lg-column
@@ -29,7 +30,10 @@ const ProductView = () => {
           <FontAwesomeIcon className="fs-5 px-1" icon={faStar} />
         </Card.Text>
         <Card.Text className="fw-bold fs-5 my-4">$ {product.price}</Card.Text>
-        <AddProduct data={product} />
+        <Form.Group className="d-flex justify-content-around">
+          <AddToCart data={product} />
+          <EditProduct data={product} />
+        </Form.Group>
       </Card.Body>
     </Card>
   );

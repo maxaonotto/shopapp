@@ -1,7 +1,7 @@
 import React from "react";
 import useProductList from "../../hooks/useProductList";
 
-import { Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import Product from "./Product";
 import Categories from "./Categories";
 
@@ -9,7 +9,7 @@ const ProductsList = ({ loadMore }) => {
   const [list, setList] = useProductList();
 
   return (
-    <>
+    <Container fluid>
       <Row>
         <Categories setList={setList} />
       </Row>
@@ -18,7 +18,7 @@ const ProductsList = ({ loadMore }) => {
           <Product key={product.id} data={product} />
         ))}
       </Row>
-    </>
+    </Container>
   );
 };
 
